@@ -1,0 +1,217 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPO9fwTcQZQJP28BmarROnx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/lucasevair/massaki/blob/main/Aula%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Exemplo 2) polegada pala milimetro**"
+      ],
+      "metadata": {
+        "id": "N2mdG2HCiKXu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lI7LQ44-iHqH",
+        "outputId": "e8536308-b6b3-44fa-8130-eeebe75ec9da"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite medida em polegadas: 70\n",
+            "valor em mm=  1778.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "pol = float(input(\"Digite medida em polegadas: \"))\n",
+        "milimetro = pol * 25.4\n",
+        "print(\"valor em mm= \",milimetro)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Exemplo 5) Calculo de Volume de Esfera**"
+      ],
+      "metadata": {
+        "id": "B8tEjpymjwe4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from math import pi\n",
+        "r = float(input(\"Digite o raio: \"))\n",
+        "vol =(4/3)*pi*r**3\n",
+        "print(\"volume= \",vol)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O6Rwrh4Rj-Nx",
+        "outputId": "a22ba4f1-1213-429c-ba4d-65cc1a9e3984"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o raio: 35\n",
+            "volume=  179594.3800302165\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Exemplo 6) Angulo para **radianos**"
+      ],
+      "metadata": {
+        "id": "AMYDgiI4lXml"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vgraus = float(input(\"Digite o valor em graus: \"))\n",
+        "vrad = (vgraus*pi)/180\n",
+        "vrad = vgraus*pi/180\n",
+        "print(vrad)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9gf3F4YJlcks",
+        "outputId": "b423e9b0-c033-47b2-9854-41b79817aaea"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor em graus: 09\n",
+            "0.15707963267948966\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Exemplo 7) Radianos para graus**"
+      ],
+      "metadata": {
+        "id": "4hZWRi3Rllrl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vrad = float(input(\"Digite o valor em radianos: \"))\n",
+        "vgraus = (vrad/pi)*180\n",
+        "vgraus = vrad*180/pi\n",
+        "print(vgraus)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NeohooAvlszO",
+        "outputId": "549eff89-36d1-4986-dfe8-7480cd3b439d"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor em radianus: 6666\n",
+            "381933.66623420676\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Exemplo 8) Radianos para grados**"
+      ],
+      "metadata": {
+        "id": "FGSyn_V6l1Hf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "rad = float(input(\"Digite o valor em radianus: \"))\n",
+        "grados = rad*400/(2*pi)\n",
+        "print(grados)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s6A8Xqzol6O2",
+        "outputId": "655a4b07-6ca3-4f8a-d2fd-080c18e7f431"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor em radianus: 56456464\n",
+            "3594130126.0358553\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "JeeB7b-EkJr9"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
